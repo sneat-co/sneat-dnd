@@ -9,7 +9,7 @@
     "@sneat/dnd-core": "^0.0.2"
   },
   "devDependencies": {
-    "@sneat/dnd-core": "0.0.2"
+    "@sneat/dnd-core": "^0.0.2"
   },
   "dependencies": {
     "tslib": "^1.10.0"
