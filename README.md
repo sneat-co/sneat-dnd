@@ -1,7 +1,9 @@
-# Package: `@sneat-team/dnd-core`
+# Package: [`@sneat-team/dnd-core`](https://www.npmjs.com/package/@sneat-team/dnd-core)
 
 Framework agnostic drag-and-drop interfaces.
 
+[![npm](https://img.shields.io/npm/v/@sneat-team/dnd-core.svg)](https://www.npmjs.com/package/@sneat-team/dnd-core)
+ 
 Developed & supported by [sneat.team](https://sneat.team) - effective collaboration app for distributed teams.
 
 ## Used by
