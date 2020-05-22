@@ -42,7 +42,48 @@
           }
         }
       }
-    }},
+    },
+    "dnd-tree": {
+      "projectType": "library",
+      "root": "projects/dnd-tree",
+      "sourceRoot": "projects/dnd-tree/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dnd-tree/tsconfig.lib.json",
+            "project": "projects/dnd-tree/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/dnd-tree/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dnd-tree/src/test.ts",
+            "tsConfig": "projects/dnd-tree/tsconfig.spec.json",
+            "karmaConfig": "projects/dnd-tree/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dnd-tree/tsconfig.lib.json",
+              "projects/dnd-tree/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "cli": {
     "analytics": "a8fa3a3d-e1d7-4c80-8db6-57b422e656f2"
   },

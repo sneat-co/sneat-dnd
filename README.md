@@ -1,10 +1,14 @@
-# Package: [`@sneat-team/dnd-core`](https://www.npmjs.com/package/@sneat-team/dnd-core)
+# [`@sneat-team/sneat-dnd`](https://github.com/sneat-team/sneat-dnd)
 
-Framework agnostic drag-and-drop interfaces.
+Framework agnostic drag-and-drop.
 
-[![npm](https://img.shields.io/npm/v/@sneat-team/dnd-core.svg)](https://www.npmjs.com/package/@sneat-team/dnd-core)
- 
 Developed & supported by [sneat.team](https://sneat.team) - effective collaboration app for distributed teams.
+
+## Packages
+| Package | Description | Latest version |
+| --- | --- | --- |
+| [`@sneat/dnd-core`](https://github.com/sneat-team/sneat-dnd/tree/master/projects/dnd-core) | | [![npm](https://img.shields.io/npm/v/@sneat/dnd-core.svg)](https://www.npmjs.com/package/@sneat/dnd-core)
+| [`@sneat/dnd-tree`](https://github.com/sneat-team/sneat-dnd/tree/master/projects/dnd-tree) | | [![npm](https://img.shields.io/npm/v/@sneat/dnd-tree.svg)](https://www.npmjs.com/package/@sneat/dnd-tree)
 
 ## Used by
 

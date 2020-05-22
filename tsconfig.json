@@ -16,8 +16,7 @@
       "dom"
     ],
     "paths": {
-      "dnd-core": [
-        "dist/dnd-core/dnd-core",
+      "@sneat/dnd-core": [
         "dist/dnd-core"
       ]
     }
