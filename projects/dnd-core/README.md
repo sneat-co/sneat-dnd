@@ -14,3 +14,6 @@ Developed & supported by [sneat.team](https://sneat.team) - effective collaborat
 ## Credits
 
 Most of the code originally was forked from `@angular-skyhook`.
+
+## Terms & Conditions
+Free & open source under [MIT license](https://github.com/sneat-team/sneat-dnd/blob/master/LICENSE).

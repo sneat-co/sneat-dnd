@@ -17,4 +17,4 @@ Below libraries are using this package:
 - [react-dnd-tree](https://github.com/sneat-team/react-dnd-tree)
 
 ## Terms & Conditions
-Free & open source under [MIT license](LICENSE).
+Free & open source under [MIT license](https://github.com/sneat-team/sneat-dnd/blob/master/LICENSE).
