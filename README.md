@@ -1,4 +1,4 @@
-# [`@sneat-team/sneat-dnd`](https://github.com/sneat-team/sneat-dnd)
+# Sneat Drag-and-Drop by https://sneat.team
 
 Framework agnostic drag-and-drop.
 
