@@ -8,7 +8,7 @@ Originally developed by [sneat.team](https://sneat.team) - effective collaborati
 
 ## Dependencies
 
-- [`@sneat-team/dnd-core`](https://github.com/sneat-team/dnd-core)
+- [`@sneat-team/dnd-core`](https://github.com/sneat-team/sneat-dnd/tree/master/projects/dnd-core)
 
 ## Used by
 Below libraries are using this package:

@@ -8,7 +8,7 @@ Developed & supported by [sneat.team](https://sneat.team) - effective collaborat
 
 ## Used by
 
-- [`@sneat-team/dnd-tree`](https://github.com/sneat-team/dnd-tree)
+- [`@sneat-team/dnd-tree`](https://github.com/sneat-team/sneat-dnd/tree/master/projects/dnd-tree)
 - [`@angular-dnd`](https://github.com/sneat-team/angular-dnd)
 
 ## Credits
