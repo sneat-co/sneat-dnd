@@ -8,7 +8,8 @@ Originally developed by [sneat.team](https://sneat.team) - effective collaborati
 
 ## Dependencies
 
-- [`@sneat-dnd/core`](https://github.com/sneat-team/sneat-dnd/tree/master/packages/dnd-core)
+- [`@sneat-dnd/core`](https://github.com/sneat-team/sneat-dnd/tree/master/packages/core)
+- [`@sneat-dnd/tree`](https://github.com/sneat-team/sneat-dnd/tree/master/packages/tree)
 
 ## Used by
 Below libraries are using this package:
