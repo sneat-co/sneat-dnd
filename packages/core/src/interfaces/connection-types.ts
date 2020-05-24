@@ -47,14 +47,14 @@ export interface ConnectionBase<TMonitor> extends SubscriptionLike {
    */
   listen<O>(mapTo: (monitor: TMonitor) => O): Observable<O>;
 
-  /**
+  /*
    * This method **MUST** be called, however you choose to, when `ngOnDestroy()` fires.
    * If you don't, you will leave subscriptions hanging around that will fire
    * callbacks on components that no longer exist.
    */
   unsubscribe(): void;
 
-  /**
+  /*
    * Same as RxJS Subscription.add().
    * Useful, for example, for writing wrappers for the {@link AngularDndService} methods,
    * which might internally listen()/subscribe to {@link IDropTargetSpec#hover} and provide
@@ -109,12 +109,11 @@ export interface DropTarget<Item = {}, DropResult = {}>
    */
   connectDropTarget(elementOrNode: Node): Subscription;
 
-  /**
-   * Returns the drop target ID that can be used to simulate the drag and drop events with the testing backend. */
+  /* Returns the drop target ID that can be used to simulate the drag and drop events with the testing backend. */
   getHandlerId(): any;
 }
 
-/**
+/*
  Like {@link DropTarget}, it can be used just for subscribing to
  drag state information related to a particular item type or list of types.
  You do not have to connect it to a DOM element if that's all you want.
@@ -123,15 +122,16 @@ export interface DropTarget<Item = {}, DropResult = {}>
  */
 export interface DragSource<Item, DropResult = {}>
   extends ConnectionBase<IDragSourceMonitor<Item, DropResult>> {
-  /** Use this method to have a dynamically typed source. If no type has
-   *  previously been set, it creates the subscription and allows the
-   *  `[dragSource]` DOM element to be connected. If you do not need to
-   *  dynamically update the type, you can set it once via the
-   *  {@link IDragSourceSpec#type} property.
+
+  /* Use this method to have a dynamically typed source. If no type has
+   * previously been set, it creates the subscription and allows the
+   * `[dragSource]` DOM element to be connected. If you do not need to
+   * dynamically update the type, you can set it once via the
+   * {@link IDragSourceSpec#type} property.
    *
-   *  If you wish to have a dynamic type based on an `@Input()` property, for
-   *  example, you must call `setType()` in either of your component's
-   *  `ngOnInit` or `ngOnChanges` methods:
+   * If you wish to have a dynamic type based on an `@Input()` property, for
+   * example, you must call `setType()` in either of your component's
+   * `ngOnInit` or `ngOnChanges` methods:
 
    ```typescript
    @Input() type: string;
@@ -156,9 +156,7 @@ export interface DragSource<Item, DropResult = {}>
    source = this.dnd.dragSource(null, {
   beginDrag: () => ({ ... })
 });
-   ```
-
-   */
+```*/
   setType(type: string | symbol): void;
 
   /** This function allows you to connect a DOM node to your `DragSource`.
@@ -173,13 +171,13 @@ export interface DragSource<Item, DropResult = {}>
     options?: DragSourceOptions
   ): Subscription;
 
-  /** This function allows you to connect a DOM node to your `DragSource` as a **preview**.
-   *  You will not usually need to call this directly;
-   *  it is more easily handled by the directives.
+  /* This function allows you to connect a DOM node to your `DragSource` as a **preview**.
+   * You will not usually need to call this directly;
+   * it is more easily handled by the directives.
    *
-   *  You might use an `ElementRef.nativeElement`, or even an
-   *  [`Image`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image).
-   *
+   * You might use an `ElementRef.nativeElement`, or even an
+   * [`Image`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image).
+
    ```ts
    const img = new Image();
    img.onload = this.source.connectDragPreview(img);
@@ -194,12 +192,11 @@ export interface DragSource<Item, DropResult = {}>
     options?: DragPreviewOptions
   ): Subscription;
 
-  /**
-   * Returns the drag source ID that can be used to simulate the drag and drop events with the testing backend. */
+  /* Returns the drag source ID that can be used to simulate the drag and drop events with the testing backend. */
   getHandlerId(): any;
 }
 
-/**
+/*
  For many use cases, the default rendering of the HTML5 backend should suffice.
  However, its drag preview has certain limitations. For example, it has to be an
  existing node screenshot or an image, and it cannot change midflight.
@@ -251,8 +248,10 @@ export interface DragSource<Item, DropResult = {}>
 
  */
 export interface DragLayer<Item = any>
+
   extends ConnectionBase<IDragLayerMonitor<Item>> {
-  /** For listen functions in general, see {@link ConnectionBase#listen}.
+
+  /* For listen functions in general, see {@link ConnectionBase#listen}.
    *
    *  This listen function is called any time the global drag state
    *  changes, including the coordinate changes, so that your component can

@@ -1,8 +1,6 @@
 import {Id, ITreeNode} from './interfaces-tree';
-import {IDndTreeContext, IDndTreeSpec, IDropTargetPosition, ITreeState} from './interfaces-dnd';
+import {IDndTreeContext, IDndTreeSpec, IDropTargetPosition, IMovedTreeItem, ITreeState} from './interfaces-dnd';
 import {Subject} from 'rxjs';
-import {IMovingTreeItem} from './interfaces-dnd';
-import {IMovedTreeItem} from './interfaces-dnd';
 
 interface INodeState<Item> {
   node: ITreeNode<Item>;

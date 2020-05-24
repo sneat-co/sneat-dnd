@@ -4,8 +4,7 @@ import {IMonitorBase} from './monitor-base';
 export interface IDragSourceMonitor<Item = {},
   DropResult = {}> extends IMonitorBase<Item> {
 
-  /**
-   * Returns `true` if **NO drag operation is in progress**, and the owner's
+  /* Returns `true` if **NO drag operation is in progress**, and the owner's
    * `canDrag()` returns `true` or is not defined.
    *
    * Note that `canDrag` doesn't blindly return what you supplied in
@@ -15,7 +14,7 @@ export interface IDragSourceMonitor<Item = {},
    * Instead, keep your `canDrag` logic simple, and replicate it in your template.
    *
    ```html
-   <div [style.background]="someProperty ? 'yellow' : 'grey'"> content </div>
+    <div [style.background]="someProperty ? 'yellow' : 'grey'"> content </div>
    ```
 
    ```typescript
@@ -26,15 +25,13 @@ export interface IDragSourceMonitor<Item = {},
    */
   canDrag(): boolean;
 
-  /**
-   * Returns `true` if a drag operation is in progress, and either the owner
+  /* Returns `true` if a drag operation is in progress, and either the owner
    * initiated the drag, or its `isDragging()` is defined and returns true.
    */
   isDragging(): boolean;
 
 
-  /**
-   * Returns a plain object representing the last recorded drop result. The
+  /* Returns a plain object representing the last recorded drop result. The
    * drop targets may optionally specify it by returning an object from their
    * `drop()` methods. When a chain of `drop()` is dispatched for the nested
    * targets, bottom up, any parent that explicitly returns its own result from
@@ -43,8 +40,7 @@ export interface IDragSourceMonitor<Item = {},
    */
   getDropResult(): DropResult;
 
-  /**
-   * Returns `true` if some drop target handled the `drop` event; `false`
+  /* Returns `true` if some drop target handled the `drop` event; `false`
    * otherwise. Even if a target did not return a drop result, `didDrop()`
    * returns true. Use it inside `endDrag()` to test whether any drop target
    * has handled the drop. Returns `false` if called outside `endDrag()`.

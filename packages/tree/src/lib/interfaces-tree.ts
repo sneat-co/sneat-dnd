@@ -1,7 +1,7 @@
 // import {TemplateRef} from '@angular/core';
 // import {DropTarget} from '@angular-dnd/core';
 import {Observable} from 'rxjs';
-import {IDraggedTreeItem, ITreeState} from './interfaces-dnd';
+import {ITreeState} from './interfaces-dnd';
 
 export type Id = string;
 

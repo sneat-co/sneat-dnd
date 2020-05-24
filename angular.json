@@ -1,40 +1,40 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
-  "newProjectRoot": "projects",
+  "newProjectRoot": "packages",
   "projects": {
-    "dnd-core": {
+    "core": {
       "projectType": "library",
-      "root": "projects/dnd-core",
-      "sourceRoot": "projects/dnd-core/src",
+      "root": "packages/core",
+      "sourceRoot": "packages/core/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/dnd-core/tsconfig.lib.json",
-            "project": "projects/dnd-core/ng-package.json"
+            "tsConfig": "packages/core/tsconfig.lib.json",
+            "project": "packages/core/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/dnd-core/tsconfig.lib.prod.json"
+              "tsConfig": "packages/core/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/dnd-core/src/test.ts",
-            "tsConfig": "projects/dnd-core/tsconfig.spec.json",
-            "karmaConfig": "projects/dnd-core/karma.conf.js"
+            "main": "packages/core/src/test.ts",
+            "tsConfig": "packages/core/tsconfig.spec.json",
+            "karmaConfig": "packages/core/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/dnd-core/tsconfig.lib.json",
-              "projects/dnd-core/tsconfig.spec.json"
+              "packages/core/tsconfig.lib.json",
+              "packages/core/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -43,38 +43,38 @@
         }
       }
     },
-    "dnd-tree": {
+    "tree": {
       "projectType": "library",
-      "root": "projects/dnd-tree",
-      "sourceRoot": "projects/dnd-tree/src",
+      "root": "packages/tree",
+      "sourceRoot": "packages/tree/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/dnd-tree/tsconfig.lib.json",
-            "project": "projects/dnd-tree/ng-package.json"
+            "tsConfig": "packages/tree/tsconfig.lib.json",
+            "project": "packages/tree/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/dnd-tree/tsconfig.lib.prod.json"
+              "tsConfig": "packages/tree/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/dnd-tree/src/test.ts",
-            "tsConfig": "projects/dnd-tree/tsconfig.spec.json",
-            "karmaConfig": "projects/dnd-tree/karma.conf.js"
+            "main": "packages/tree/src/test.ts",
+            "tsConfig": "packages/tree/tsconfig.spec.json",
+            "karmaConfig": "packages/tree/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/dnd-tree/tsconfig.lib.json",
-              "projects/dnd-tree/tsconfig.spec.json"
+              "packages/tree/tsconfig.lib.json",
+              "packages/tree/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -87,5 +87,5 @@
   "cli": {
     "analytics": "a8fa3a3d-e1d7-4c80-8db6-57b422e656f2"
   },
-  "defaultProject": "dnd-core"
+  "defaultProject": "core"
 }

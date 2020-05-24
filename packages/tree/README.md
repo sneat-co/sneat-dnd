@@ -2,13 +2,13 @@
 
 Framework agnostic interfaces & logic for drag-and-drop tree components.
 
-[![npm](https://img.shields.io/npm/v/@sneat/dnd-tree.svg)](https://www.npmjs.com/package/@sneat/dnd-tree)
+[![npm](https://img.shields.io/npm/v/@sneat-dnd/tree.svg)](https://www.npmjs.com/package/@sneat-dnd/ree)
 
 Originally developed by [sneat.team](https://sneat.team) - effective collaboration app for distributed teams.
 
 ## Dependencies
 
-- [`@sneat-team/dnd-core`](https://github.com/sneat-team/sneat-dnd/tree/master/projects/dnd-core)
+- [`@sneat-dnd/core`](https://github.com/sneat-team/sneat-dnd/tree/master/packages/dnd-core)
 
 ## Used by
 Below libraries are using this package:
