@@ -19,7 +19,3 @@ Developed & supported by [sneat.team](https://sneat.team) - effective collaborat
 
 - https://sneat.team - effective collaboration app for distributed teams.
 - https://retrospective.express - online scrums for agile teams.
-
-## Credits
-
-Most of the code originally was forked from [`@angular-skyhook`](https://github.com/cormacrelf/angular-skyhook).
