@@ -2,7 +2,7 @@
 
 Framework agnostic interfaces & logic for drag-and-drop tree components.
 
-[![npm](https://img.shields.io/npm/v/@sneat-dnd/tree.svg)](https://www.npmjs.com/package/@sneat-dnd/ree)
+[![npm](https://img.shields.io/npm/v/@sneat-dnd/tree.svg)](https://www.npmjs.com/package/@sneat-dnd/tree)
 
 Originally developed by [sneat.team](https://sneat.team) - effective collaboration app for distributed teams.
 
