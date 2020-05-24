@@ -13,7 +13,7 @@ Developed & supported by [sneat.team](https://sneat.team) - effective collaborat
 ## Used by
 
 - [`@angular-dnd`](https://github.com/angular-dnd/angular-dnd)
-- Other [dependent packages](https://www.npmjs.com/package/@sneat-team/dnd-core?activeTab=dependents).
+- Other [dependent packages](https://www.npmjs.com/package/@sneat-dnd/core?activeTab=dependents).
  
 ## Credits
 
