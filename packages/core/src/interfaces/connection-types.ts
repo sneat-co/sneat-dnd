@@ -87,7 +87,7 @@ export interface IConnectionBase<TMonitor> extends SubscriptionLike {
  *
  * To create one, refer to {@link AngularDndService#dropTarget}.
  */
-export interface DropTarget<Item = {}, DropResult = {}>
+export interface IDropTarget<Item = {}, DropResult = {}>
   extends IConnectionBase<IDropTargetMonitor<Item, DropResult>> {
   /** Use this method to have a dynamically typed target. If no type has
    *  previously been set, it creates the subscription and allows the
@@ -95,12 +95,12 @@ export interface DropTarget<Item = {}, DropResult = {}>
    *  dynamically update the type, you can set it once via the
    *  {@link IDropTargetSpec#types} property.
    *
-   *  See {@link DragSource#setType} for an example of how to set
+   *  See {@link IDragSource#setType} for an example of how to set
    *  a dynamic type, for it is very similar here.
    */
   setTypes(type: TypeOrTypeArray): void;
 
-  /** This function allows you to connect a DOM node to your `DropTarget`.
+  /** This function allows you to connect a DOM node to your `IDropTarget`.
    *  You will not usually need to call this directly;
    *  it is more easily handled by the directives.
    *
@@ -114,13 +114,13 @@ export interface DropTarget<Item = {}, DropResult = {}>
 }
 
 /*
- Like {@link DropTarget}, it can be used just for subscribing to
+ Like {@link IDropTarget}, it can be used just for subscribing to
  drag state information related to a particular item type or list of types.
  You do not have to connect it to a DOM element if that's all you want.
 
  To create one, refer to {@link AngularDndService#dragSource}.
  */
-export interface DragSource<Item, DropResult = {}>
+export interface IDragSource<Item, DropResult = {}>
   extends IConnectionBase<IDragSourceMonitor<Item, DropResult>> {
 
   /* Use this method to have a dynamically typed source. If no type has
@@ -247,7 +247,7 @@ export interface DragSource<Item, DropResult = {}>
  Or, you could just use [@angular-dnd/multi-backend](../@angular-skyhook/multi-backend/).
 
  */
-export interface DragLayer<Item = any>
+export interface IDragLayer<Item = any>
 
   extends IConnectionBase<IDragLayerMonitor<Item>> {
 

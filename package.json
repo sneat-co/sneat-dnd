@@ -11,8 +11,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:prod": "ng build dnd-core --prod && ng build dnd-tree --prod",
-    "publish": "npm run build:prod && npm publish dist/dnd-core --access public && npm publish dist/dnd-tree --access public"
+    "build:prod": "ng build core --prod && ng build tree --prod",
+    "publish": "npm run build:prod && npm publish dist/core --access public && npm publish dist/tree --access public"
   },
   "repository": "https://github.com/sneat-team/sneat-dnd.git",
   "homepage": "https://github.com/sneat-team/sneat-dnd",
