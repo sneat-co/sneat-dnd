@@ -1,4 +1,4 @@
-import {Offset} from './type-ish';
+import {IOffset} from './type-ish';
 
 /* The methods common to all monitor classes. */
 export interface IMonitorBase<Item> {
@@ -12,23 +12,23 @@ export interface IMonitorBase<Item> {
 
   /* The initial mouse x,y position relative to the viewport, when the current
    * drag operation started. Returns `null` if no item is being dragged. */
-  getInitialClientOffset(): Offset | null;
+  getInitialClientOffset(): IOffset | null;
 
   /* x,y relative to viewport of the item's DOM element before it was dragged.
    * Returns `null` if no item is being dragged. */
-  getInitialSourceClientOffset(): Offset | null;
+  getInitialSourceClientOffset(): IOffset | null;
 
   /* The current mouse x,y position relative to the viewport. Returns `null`
    * if no item is being dragged. */
-  getClientOffset(): Offset | null;
+  getClientOffset(): IOffset | null;
 
   /* A vector x,y of the displacement of the dragged item from its initial
    * position. Returns `null` if no item is being dragged. */
 
-  getDifferenceFromInitialOffset(): Offset | null;
+  getDifferenceFromInitialOffset(): IOffset | null;
 
   /* The projected x,y position relative to viewport of the root DOM element of the drag source
    * = its initial position + displacement. Returns `null` if no item is
    * being dragged. */
-  getSourceClientOffset(): Offset | null;
+  getSourceClientOffset(): IOffset | null;
 }

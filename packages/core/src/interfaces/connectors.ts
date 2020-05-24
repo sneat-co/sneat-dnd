@@ -1,7 +1,7 @@
 /* Provide customisations for how a backend should handle a DragSource and
  * display items dragged from it. See {@link DragSource#connectDragSource}.
  */
-export interface DragSourceOptions {
+export interface IDragSourceOptions {
 
   /*  A string. By default, 'move'. In the browsers that support this
    *  feature, specifying 'copy' shows a special "copying" cursor, while 'move'
@@ -15,7 +15,7 @@ export interface DragSourceOptions {
 /**
  * Provide options for how to render a drag preview. See {@link DragSource#connectDragPreview}.
  */
-export interface DragPreviewOptions {
+export interface IDragPreviewOptions {
 
   /*  By default, false. If true, the component will learn that it is being
    *  dragged immediately as the drag starts instead of the next tick. This
@@ -62,21 +62,23 @@ export interface DragPreviewOptions {
 }
 
 /* @ignore Connects a drop target to a DOM element */
-export interface DropTargetConnector {
+// noinspection JSUnusedGlobalSymbols
+export interface IDropTargetConnector {
   dropTarget(elementOrNode: any): void;
 }
 
 /* @ignore Connects a drag source to a DOM element, either as the source itself or as
  * a drag preview */
-export interface DragSourceConnector {
+// noinspection JSUnusedGlobalSymbols
+export interface IDragSourceConnector {
 
 
   /* This connects a DOM `element` or node as a drag source. You may use an
    * `ElementRef.nativeElement`, or even an
    * [`Image`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image).
    */
-  dragSource(elementOrNode: any, options?: DragSourceOptions): void;
+  dragSource(elementOrNode: any, options?: IDragSourceOptions): void;
 
-  dragPreview(elementOrNode: any, options?: DragPreviewOptions): void;
+  dragPreview(elementOrNode: any, options?: IDragPreviewOptions): void;
 
 }

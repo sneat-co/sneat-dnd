@@ -7,13 +7,15 @@ import {
   ITreeState
 } from './interfaces-dnd';
 import {ChildrenSizeMode} from './interfaces-tree';
-import {IDropTargetMonitor, Offset} from '@sneat-dnd/core';
+import {IDropTargetMonitor, IOffset} from '@sneat-dnd/core';
 
+// noinspection JSUnusedGlobalSymbols
 export class DefaultDropStrategy<Item> implements IDropStrategy<Item> {
 
   // private lastCantDropReason: string;
   // private lastCantDropDraggedId: Id;
 
+  // noinspection JSUnusedGlobalSymbols
   public canDrop(
     dragged: IDraggedTreeItem<Item>,
     to: IDropTargetPosition<Item>,
@@ -66,7 +68,7 @@ export class DefaultDropStrategy<Item> implements IDropStrategy<Item> {
   }
 
   // This is for nodes of fixed size that can't have children
-  suggestImmediate(dragged: IDraggedTreeItem<Item>, hovered: IDropHovered<Item>, _: Offset): IDropTargetPosition<Item> {
+  suggestImmediate(dragged: IDraggedTreeItem<Item>, hovered: IDropHovered<Item>, _: IOffset): IDropTargetPosition<Item> {
     const draggedNode = dragged.node;
     const hoveredNode = hovered.node;
     const {parent} = hoveredNode;
@@ -84,7 +86,7 @@ export class DefaultDropStrategy<Item> implements IDropStrategy<Item> {
   }
 
   // This is for nodes of variable size that can't have children
-  suggestHalfway(dragged: IDraggedTreeItem<Item>, hovered: IDropHovered<Item>, clientOffset: Offset): IDropTargetPosition<Item> {
+  suggestHalfway(dragged: IDraggedTreeItem<Item>, hovered: IDropHovered<Item>, clientOffset: IOffset): IDropTargetPosition<Item> {
     const {dim, mouse, start} = this.coordinates(hovered, clientOffset);
     const targetCentre = start + dim / 2.0;
     const topHalf = mouse < targetCentre;
@@ -110,7 +112,7 @@ export class DefaultDropStrategy<Item> implements IDropStrategy<Item> {
   }
 
   // This is for nodes that can accept new children
-  suggestTripleWay(dragged: IDraggedTreeItem<Item>, hovered: IDropHovered<Item>, clientOffset: Offset): IDropTargetPosition<Item> {
+  suggestTripleWay(dragged: IDraggedTreeItem<Item>, hovered: IDropHovered<Item>, clientOffset: IOffset): IDropTargetPosition<Item> {
     const {dim, mouse, start} = this.coordinates(hovered, clientOffset);
     const padding = 10;
     let result: IDropTargetPosition<Item>;
@@ -151,7 +153,7 @@ export class DefaultDropStrategy<Item> implements IDropStrategy<Item> {
     return result;
   }
 
-  private coordinates(hovered: IDropHovered<Item>, clientOffset: Offset): { dim: number, mouse: number, start: number } {
+  private coordinates(hovered: IDropHovered<Item>, clientOffset: IOffset): { dim: number, mouse: number, start: number } {
     const rect = hovered.rect();
     const isHorizontal = hovered.node.childrenDirection === 'horizontal';
     const dim = isHorizontal

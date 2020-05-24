@@ -5,10 +5,10 @@ import {ITreeState} from './interfaces-dnd';
 
 export type Id = string;
 
-export interface ITree<Data> { // TODO: not used, consider removal
-  readonly id: Id;
-  items?: Data[];
-}
+// export interface ITree<Data> { // TODO: is snot used, consider removal
+//   readonly id: Id;
+//   items?: Data[];
+// }
 
 export interface ITreeContext<Item> {
   readonly id: Id; // Tree ID

@@ -8,12 +8,12 @@ import {IDragSourceMonitor} from './drag-source-monitor';
 import {TypeOrTypeArray} from './type-ish';
 import {Observable, Subscription, SubscriptionLike, TeardownLogic} from 'rxjs';
 import {IDragLayerMonitor} from './drag-layer-monitor';
-import {DragPreviewOptions, DragSourceOptions} from './connectors';
+import {IDragPreviewOptions, IDragSourceOptions} from './connectors';
 
 /*
  * A base type to represent a DOM connection.
  */
-export interface ConnectionBase<TMonitor> extends SubscriptionLike {
+export interface IConnectionBase<TMonitor> extends SubscriptionLike {
   /*
    * A connection maintains a subscription to `dnd-core`'s drag state
    * changes. This function is how you are notified of those changes.
@@ -88,7 +88,7 @@ export interface ConnectionBase<TMonitor> extends SubscriptionLike {
  * To create one, refer to {@link AngularDndService#dropTarget}.
  */
 export interface DropTarget<Item = {}, DropResult = {}>
-  extends ConnectionBase<IDropTargetMonitor<Item, DropResult>> {
+  extends IConnectionBase<IDropTargetMonitor<Item, DropResult>> {
   /** Use this method to have a dynamically typed target. If no type has
    *  previously been set, it creates the subscription and allows the
    *  `[dragSource]` DOM element to be connected. If you do not need to
@@ -121,7 +121,7 @@ export interface DropTarget<Item = {}, DropResult = {}>
  To create one, refer to {@link AngularDndService#dragSource}.
  */
 export interface DragSource<Item, DropResult = {}>
-  extends ConnectionBase<IDragSourceMonitor<Item, DropResult>> {
+  extends IConnectionBase<IDragSourceMonitor<Item, DropResult>> {
 
   /* Use this method to have a dynamically typed source. If no type has
    * previously been set, it creates the subscription and allows the
@@ -168,7 +168,7 @@ export interface DragSource<Item, DropResult = {}>
    */
   connectDragSource(
     elementOrNode: Node,
-    options?: DragSourceOptions
+    options?: IDragSourceOptions
   ): Subscription;
 
   /* This function allows you to connect a DOM node to your `DragSource` as a **preview**.
@@ -189,7 +189,7 @@ export interface DragSource<Item, DropResult = {}>
    */
   connectDragPreview(
     elementOrNode: Node,
-    options?: DragPreviewOptions
+    options?: IDragPreviewOptions
   ): Subscription;
 
   /* Returns the drag source ID that can be used to simulate the drag and drop events with the testing backend. */
@@ -249,7 +249,7 @@ export interface DragSource<Item, DropResult = {}>
  */
 export interface DragLayer<Item = any>
 
-  extends ConnectionBase<IDragLayerMonitor<Item>> {
+  extends IConnectionBase<IDragLayerMonitor<Item>> {
 
   /* For listen functions in general, see {@link ConnectionBase#listen}.
    *

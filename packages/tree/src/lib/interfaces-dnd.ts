@@ -1,16 +1,16 @@
 import {ChildrenSizeMode, Id, ITreeContext, ITreeNode, ITreeSpec} from './interfaces-tree';
 import {IDropTargetMonitor} from '@sneat-dnd/core';
 
-export type TreeItemType = string | symbol;
+// export type TreeItemType = string | symbol;
 
-export interface IDragItem<Data> {
-  index: number;
-  data: Data;
-}
-
-export interface DraggedTreeItemPosition {
-  treeId: string;
-}
+// export interface IDragItem<Data> {
+//   index: number;
+//   data: Data;
+// }
+//
+// export interface DraggedTreeItemPosition {
+//   treeId: string;
+// }
 
 export interface ISize {
   readonly width: number;
