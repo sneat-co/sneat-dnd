@@ -9,11 +9,10 @@ interface INodeState<Item> {
 
 export class TreeState<Item> implements ITreeState<Item> {
 
+  private readonly tree: IDndTreeContext<Item>;
   private rootNode: ITreeNode<Item>;
-  private spec: IDndTreeSpec<Item>;
-  private tree: IDndTreeContext<Item>;
 
-  private nodes: { [id: string]: INodeState<Item> } = {};
+  private readonly nodes: { [id: string]: INodeState<Item> } = {};
 
   private readonly $moved = new Subject<IMovedTreeItem<Item>>();
   public readonly moved = this.$moved.asObservable();
@@ -44,13 +43,12 @@ export class TreeState<Item> implements ITreeState<Item> {
     });
   }
 
-  public setTreeContext(tree: IDndTreeContext<Item>) { // Kinda bad - work around circular references
-    this.tree = tree;
-    this.spec = tree.spec;
+  public constructor(tree: {readonly id: string, readonly spec: IDndTreeSpec<Item>}) {
+    this.tree = {...tree, state: this};
   }
 
   public updateRoot(rootItem: Item): ITreeNode<Item> {
-    const spec = this.spec;
+    const spec = this.tree.spec;
     const id = spec.itemId(rootItem);
     this.rootNode = this.createNode({
       id,
@@ -105,10 +103,11 @@ export class TreeState<Item> implements ITreeState<Item> {
     if (node.children) {
       return this.updateNodeInternal(node, {isExpanded: true}, changedNodes);
     }
-    const children = this.spec.getChildItems(node.data);
+    const {spec} = this.tree;
+    const children = spec.getChildItems(node.data);
     const level = node.level + 1;
     const {id, tree} = node;
-    const {itemId} = this.spec;
+    const {itemId} = spec;
     const next: ITreeNode<Item> = {
       ...node,
       isExpanded: true,
@@ -151,9 +150,15 @@ export class TreeState<Item> implements ITreeState<Item> {
 
   public move(id: Id, to: IDropTargetPosition<Item>, props?: Partial<ITreeNode<Item>>): ITreeNode<Item> {
     console.log(`move(${id}), to:`, to);
-    const from = this.dragging[id];
-    delete this.dragging[id];
+    let from = this.dragging[id];
+    if (from) {
+      delete this.dragging[id];
+    } else {
+      const n = this.node(id);
+      from = {parent: n.parent, index: n.index};
+    }
     const node = this.placeNode(id, to, props);
+    console.log('move => emitting moved', node, from);
     this.$moved.next({node, from});
     return node;
   }
