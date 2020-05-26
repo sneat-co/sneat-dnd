@@ -7,9 +7,15 @@ interface INodeState<Item> {
   changed: Subject<ITreeNode<Item>>;
 }
 
+interface ITreeStateCtrParams<Item> {
+  readonly id: string;
+  readonly spec: IDndTreeSpec<Item>;
+  [others: string]: any;
+}
+
 export class TreeState<Item> implements ITreeState<Item> {
 
-  private readonly tree: IDndTreeContext<Item>;
+  public readonly tree: IDndTreeContext<Item>;
   private rootNode: ITreeNode<Item>;
 
   private readonly nodes: { [id: string]: INodeState<Item> } = {};
@@ -26,7 +32,7 @@ export class TreeState<Item> implements ITreeState<Item> {
     this.nodes[id] = {...this.nodes[id], node};  // TODO(StackOverflow) Why this does not work: this.nodes[id].node = node;
     if (changedNodes.indexOf(id) < 0) {
       changedNodes.push(id);
-      // console.log('masrked as changed:', node.id);
+      // console.log('marked as changed:', node.id);
     }
     return node;
   }
@@ -43,12 +49,13 @@ export class TreeState<Item> implements ITreeState<Item> {
     });
   }
 
-  public constructor(tree: {readonly id: string, readonly spec: IDndTreeSpec<Item>}) {
+  public constructor(tree: ITreeStateCtrParams<Item>) {
     this.tree = {...tree, state: this};
   }
 
   public updateRoot(rootItem: Item): ITreeNode<Item> {
-    const spec = this.tree.spec;
+    const firstTime = !this.rootNode;
+    const {spec} = this.tree;
     const id = spec.itemId(rootItem);
     this.rootNode = this.createNode({
       id,
@@ -58,7 +65,9 @@ export class TreeState<Item> implements ITreeState<Item> {
       childrenCount: spec.childrenCount(rootItem),
     });
     const changedNodes: Id[] = [];
-    this.rootNode = this.autoExpandIfApplicable(this.rootNode, changedNodes);
+    if (firstTime) {
+      this.rootNode = this.autoExpandIfApplicable(this.rootNode, changedNodes);
+    }
     this.emitChanges(changedNodes);
     return this.rootNode;
   }
