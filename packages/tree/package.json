@@ -6,13 +6,13 @@
   "homepage": "https://github.com/sneat-team/sneat-dnd/tree/master/packages/tree",
   "license": "MIT",
   "peerDependencies": {
-    "@sneat-dnd/core": "^0.0.4"
+    "@sneat-dnd/core": "^0.0.6"
   },
   "devDependencies": {
     "@sneat-dnd/core": "^0.0.6"
   },
   "dependencies": {
-    "tslib": "^1.10.0"
+    "tslib": "^2.0.0"
   },
   "keywords": [
     "dnd",
