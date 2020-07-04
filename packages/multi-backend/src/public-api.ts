@@ -1,7 +1,8 @@
 /*
- * Public API Surface of multi-backend
+ * Public API Surface of @sneat-dnd/multi-backend
  */
 
-export * from './lib/multi-backend.service';
-export * from './lib/multi-backend.component';
-export * from './lib/multi-backend.module';
+export {MultiBackend} from './lib/multi-backend';
+export {PreviewList} from './lib/preview-list';
+export {createTransition} from './lib/create-transition';
+export * from './lib/transitions';
