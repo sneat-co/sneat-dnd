@@ -1,17 +1,17 @@
 import {PreviewList} from './preview-list';
 import {Backend, DragDropManager} from 'dnd-core';
-import {IPreview, ITransition} from './interfaces';
+import {ITransition} from './interfaces';
 
-export const multiBackendFactory = (manager: DragDropManager, context, options: any) => {
+export const multiBackendFactory = (manager: DragDropManager, context, options: {backends: BackendConfig[]}) => {
   return new MultiBackend(manager, context, options);
 };
 
 let isSetUp = false;
 
-interface BackendConfig {
+export interface BackendConfig {
   backend: (manager, context, options) => Backend;
   transition?: ITransition;
-  preview?: IPreview;
+  preview?: boolean;
   options?: any;
   skipDispatchOnTransition?: boolean | 1 | 0 | 'true' | 'yes';
 }
@@ -29,7 +29,7 @@ export class MultiBackend implements Backend {
   private backends: BackendItem[] = [];
   private nodes: { [id: string]: any } = {};
 
-  constructor(manager: DragDropManager, context, sourceOptions) {
+  constructor(manager: DragDropManager, context, sourceOptions: {backends: BackendConfig[]}) {
     const options = Object.assign({backends: []}, sourceOptions || {});
 
     if (options.backends.length < 1) {
