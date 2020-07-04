@@ -1,6 +1,6 @@
 {
   "name": "@sneat-dnd/multi-backend",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "repository": "https://github.com/sneat-team/sneat-dnd.git",
   "license": "MIT",
   "peerDependencies": {
