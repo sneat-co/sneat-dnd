@@ -154,7 +154,7 @@
     universal-analytics "0.4.20"
     uuid "8.1.0"
 
-"@angular/compiler-cli@~10.0.2":
+"@angular/compiler-cli@10.0.2":
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-10.0.2.tgz#8f178a03989e0018890c52807df9e3e03faaf47a"
   integrity sha512-LGX86k1hOyaw5aPCjFfoLuPhVLKMENOdCBeNBzZB+H2CUGHfv8OWFB1EzjZO1N07VGR7JoMx9ZWSP7ornhuS4Q==
@@ -173,26 +173,26 @@
     tslib "^2.0.0"
     yargs "15.3.0"
 
-"@angular/compiler@~10.0.2":
+"@angular/compiler@10.0.2":
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-10.0.2.tgz#1056af84ad76763f03228aa3a60b63a5cd775944"
   integrity sha512-TNE5ESDlRCVneb/K62HOEgLpxuZZTlw8RcmOy5vt3SngEVc576OE/aYsEA6MCwTlqj16GLSS3jGm9HBJcBKUVw==
   dependencies:
     tslib "^2.0.0"
 
-"@angular/core@^10.0.2":
+"@angular/core@10.0.2":
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-10.0.2.tgz#d2d2c2dd4a9e80dcccc63c274f13ab7397ee5a3b"
   integrity sha512-r4M1D2NOdkmmFyvYLHRYSIBKTGNXQarZHDZcm5oEq2eTsRVe2u9MYIeOpHKeVQCQK7XKQVB13IZQP3XpUvljFg==
   dependencies:
     tslib "^2.0.0"
 
-"@angular/language-service@~10.0.2":
+"@angular/language-service@10.0.2":
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-10.0.2.tgz#31f22020be96ab2cf77283e0627f8a6fffedfe36"
   integrity sha512-kEMJ3DkprpoGJvEjvH/PZrBKtgCbLtFYtrXHRDy2+92vgCT0Xz6TwzZ2qlwlQSijffOgsV5LwdjI4oxpgVKReQ==
 
-"@angular/platform-browser-dynamic@^10.0.2":
+"@angular/platform-browser-dynamic@10.0.2":
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-10.0.2.tgz#b752e2110e5a4316087ce7922227b453e423c144"
   integrity sha512-R1rt1/Ynm0DHgzMBcduCPoDg2y3MrYZVgT+N0DLobr2nCaVD74vGsJBVCRv7/m1sdCxyhPlOvq8Bm5sRauw2fw==
@@ -9822,7 +9822,7 @@ yn@3.1.1:
   resolved "https://registry.yarnpkg.com/yn/-/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 
-zone.js@~0.10.3:
+zone.js@0.10.3:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.10.3.tgz#3e5e4da03c607c9dcd92e37dd35687a14a140c16"
   integrity sha512-LXVLVEq0NNOqK/fLJo3d0kfzd4sxwn2/h67/02pjCjfKDxgx1i9QqpvtHD8CrBnSSwMw5+dy11O7FRX5mkO7Cg==
