@@ -4,7 +4,7 @@
   "repository": "https://github.com/sneat-team/sneat-dnd.git",
   "license": "MIT",
   "peerDependencies": {
-    "dnd-core": "^11.1.0"
+    "dnd-core": "^11.1.0 || ^14.0.0"
   },
   "dependencies": {
     "tslib": "2.3.1"
