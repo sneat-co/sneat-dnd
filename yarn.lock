@@ -3854,14 +3854,14 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-dnd-core@14.0.0:
-  version "14.0.0"
-  resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-14.0.0.tgz#973ab3470d0a9ac5a0fa9021c4feba93ad12347d"
-  integrity sha512-wTDYKyjSqWuYw3ZG0GJ7k+UIfzxTNoZLjDrut37PbcPGNfwhlKYlPUqjAKUjOOv80izshUiqusaKgJPItXSevA==
+dnd-core@14.0.1:
+  version "14.0.1"
+  resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-14.0.1.tgz#76d000e41c494983210fb20a48b835f81a203c2e"
+  integrity sha512-+PVS2VPTgKFPYWo3vAFEA8WPbTf7/xo43TifH9G8S1KqnrQu0o77A3unrF5yOugy4mIz7K5wAVFHUcha7wsz6A==
   dependencies:
     "@react-dnd/asap" "^4.0.0"
     "@react-dnd/invariant" "^2.0.0"
-    redux "^4.0.5"
+    redux "^4.1.1"
 
 dns-equal@^1.0.0:
   version "1.0.0"
@@ -8378,7 +8378,7 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-redux@^4.0.5:
+redux@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.1.1.tgz#76f1c439bb42043f985fbd9bf21990e60bd67f47"
   integrity sha512-hZQZdDEM25UY2P493kPYuKqviVwZ58lEmGQNeQ+gXa+U0gYPUBf7NKYazbe3m+bs/DzM/ahN12DbF+NG8i0CWw==
