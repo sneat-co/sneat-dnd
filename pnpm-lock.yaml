@@ -1,21 +1,21 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@angular-devkit/build-angular': ~12.2.0
-  '@angular-eslint/eslint-plugin': ~12.3.0
-  '@angular-eslint/eslint-plugin-template': ~12.3.0
-  '@angular-eslint/template-parser': ~12.3.0
-  '@angular/animations': ^12.2.0
-  '@angular/cli': ~12.2.0
-  '@angular/common': ^12.2.0
-  '@angular/compiler': ^12.2.0
-  '@angular/compiler-cli': ^12.2.0
-  '@angular/core': ^12.2.0
-  '@angular/forms': ^12.2.0
-  '@angular/language-service': ^12.2.0
-  '@angular/platform-browser': ^12.2.0
-  '@angular/platform-browser-dynamic': ^12.2.0
-  '@angular/router': ^12.2.0
+  '@angular-devkit/build-angular': 12.2.10
+  '@angular-eslint/eslint-plugin': 12.3.1
+  '@angular-eslint/eslint-plugin-template': 12.3.1
+  '@angular-eslint/template-parser': 12.3.1
+  '@angular/animations': 12.2.10
+  '@angular/cli': 12.2.10
+  '@angular/common': 12.2.10
+  '@angular/compiler': 12.2.10
+  '@angular/compiler-cli': 12.2.10
+  '@angular/core': 12.2.10
+  '@angular/forms': 12.2.10
+  '@angular/language-service': 12.2.10
+  '@angular/platform-browser': 12.2.10
+  '@angular/platform-browser-dynamic': 12.2.10
+  '@angular/router': 12.2.10
   '@nrwl/angular': 12.10.0
   '@nrwl/cli': 12.10.0
   '@nrwl/eslint-plugin-nx': 12.10.0
@@ -26,20 +26,20 @@ specifiers:
   '@nrwl/workspace': 12.10.0
   '@types/jest': 27.0.2
   '@types/node': 14.14.33
-  '@typescript-eslint/eslint-plugin': ~4.31.1
-  '@typescript-eslint/parser': ~4.31.1
+  '@typescript-eslint/eslint-plugin': 4.31.2
+  '@typescript-eslint/parser': 4.31.2
   dnd-core: 14.0.1
   eslint: 7.22.0
   eslint-config-prettier: 8.1.0
   jest: 27.2.3
   jest-preset-angular: 10.0.1
-  ng-packagr: ^12.1.1
-  prettier: ^2.3.1
-  rxjs: ~6.6.0
+  ng-packagr: 12.2.3
+  prettier: 2.4.1
+  rxjs: 6.6.7
   ts-jest: 27.0.5
-  tslib: ^2.0.0
-  typescript: ~4.3.5
-  zone.js: ~0.11.4
+  tslib: 2.3.1
+  typescript: 4.3.5
+  zone.js: 0.11.4
 
 dependencies:
   '@angular/animations': 12.2.10_@angular+core@12.2.10
@@ -4356,6 +4356,7 @@ packages:
 
   /bindings/1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: true
@@ -6165,6 +6166,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -8533,6 +8535,7 @@ packages:
 
   /nan/2.15.0:
     resolution: {integrity: sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==}
+    requiresBuild: true
     dev: true
     optional: true
 
