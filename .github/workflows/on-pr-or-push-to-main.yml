@@ -1,12 +1,13 @@
 name: On PR or push to main
 
-'on':
+on:
   pull_request:
     branches:
       - main
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,4 +36,4 @@ jobs:
 
       - name: NX build - core,tree,multi-backend
         run: pnpm run nx -- run-many --target=build --projects=core,tree,multi-backend
-        working-directory: ./src
+        working-directory: .
