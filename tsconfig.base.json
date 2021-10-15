@@ -1,32 +1,45 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "module": "es2020",
     "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2016",
+    "target": "es2015",
+    "module": "esnext",
     "lib": [
-      "es2018",
+      "es2017",
       "dom"
     ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
     "paths": {
-      "@sneat-dnd/core": [
-        "dist/core"
+      "@sneat/core": [
+        "libs/core/src/index.ts"
       ],
-      "multi-backend": [
-        "dist/multi-backend/multi-backend",
-        "dist/multi-backend"
+      "@sneat/dnd-core": [
+        "libs/core/src/index.ts"
+      ],
+      "@sneat/dnd-multi-backend": [
+        "libs/multi-backend/src/index.ts"
+      ],
+      "@sneat/dnd-tree": [
+        "libs/tree/src/index.ts"
+      ],
+      "@sneat/multi-backend": [
+        "libs/multi-backend/src/index.ts"
+      ],
+      "@sneat/tree": [
+        "libs/tree/src/index.ts"
       ]
     }
   },
-  "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
-  }
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
