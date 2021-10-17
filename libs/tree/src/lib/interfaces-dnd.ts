@@ -1,5 +1,5 @@
 import {ChildrenSizeMode, Id, ITreeContext, ITreeNode, ITreeSpec} from './interfaces-tree';
-import {IDropTargetMonitor} from '@sneat/dnd-core';
+import {IDropTargetMonitor} from '@sneat-dnd/core';
 
 // export type TreeItemType = string | symbol;
 

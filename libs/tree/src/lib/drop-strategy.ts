@@ -7,7 +7,7 @@ import {
     ITreeState
 } from './interfaces-dnd';
 import {ChildrenSizeMode} from './interfaces-tree';
-import {IDropTargetMonitor, IOffset} from '@sneat/dnd-core';
+import {IDropTargetMonitor, IOffset} from '@sneat-dnd/core';
 
 // noinspection JSUnusedGlobalSymbols
 export class DefaultDropStrategy<Item> implements IDropStrategy<Item> {

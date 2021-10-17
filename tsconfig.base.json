@@ -21,13 +21,13 @@
       "@sneat/core": [
         "libs/core/src/index.ts"
       ],
-      "@sneat/dnd-core": [
+      "@sneat-dnd/core": [
         "libs/core/src/index.ts"
       ],
-      "@sneat/dnd-multi-backend": [
+      "@sneat-dnd/multi-backend": [
         "libs/multi-backend/src/index.ts"
       ],
-      "@sneat/dnd-tree": [
+      "@sneat-dnd/tree": [
         "libs/tree/src/index.ts"
       ],
       "@sneat/multi-backend": [

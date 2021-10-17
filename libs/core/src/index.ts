@@ -1,5 +1,5 @@
 /*
- * Public API Surface of @sneat/dnd-core
+ * Public API Surface of @sneat-dnd/core
  */
 
 export * from './lib/drag-layer-monitor';

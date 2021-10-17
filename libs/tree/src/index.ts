@@ -1,5 +1,5 @@
 /*
- * Public API Surface of @sneat/dnd-tree
+ * Public API Surface of @sneat-dnd/tree
  */
 
 export * from './lib/default-tree-spec';

@@ -1,6 +1,8 @@
 {
-  "name": "@sneat/dnd-core",
-  "version": "0.0.1",
+  "name": "@sneat-dnd/core",
+  "version": "0.1.1",
+  "author": "Alexander Trakhimenok",
+  "repository": "https://github.com/sneat-co/sneat-dnd",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"
