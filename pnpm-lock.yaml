@@ -33,7 +33,7 @@ specifiers:
   eslint-config-prettier: 8.3.0
   jest: 27.3.1
   jest-preset-angular: 10.0.1
-  ng-packagr: 12.2.3
+  ng-packagr: 12.2.4
   prettier: 2.4.1
   rxjs: 6.6.7
   ts-jest: 27.0.7
@@ -57,7 +57,7 @@ dependencies:
   zone.js: 0.11.4
 
 devDependencies:
-  '@angular-devkit/build-angular': 12.2.10_a0765da7cc16348a1adba1cd7bcf13ef
+  '@angular-devkit/build-angular': 12.2.10_cf76c9f8ea26db7df95f1c700659e531
   '@angular-eslint/eslint-plugin': 12.3.1_c080fc73db1068a3e32a2f723fa8bf00
   '@angular-eslint/eslint-plugin-template': 12.3.1_c080fc73db1068a3e32a2f723fa8bf00
   '@angular-eslint/template-parser': 12.3.1_c080fc73db1068a3e32a2f723fa8bf00
@@ -68,7 +68,7 @@ devDependencies:
   '@nrwl/eslint-plugin-nx': 12.10.0_a2cc8a8c480676bf40839dc0609e7a30
   '@nrwl/jest': 12.10.0
   '@nrwl/linter': 12.10.0
-  '@nrwl/nx-cloud': 12.3.14
+  '@nrwl/nx-cloud': 12.5.0
   '@nrwl/tao': 12.10.0
   '@nrwl/workspace': 12.10.0_prettier@2.4.1
   '@types/jest': 27.0.2
@@ -79,7 +79,7 @@ devDependencies:
   eslint-config-prettier: 8.3.0_eslint@8.0.1
   jest: 27.3.1
   jest-preset-angular: 10.0.1_e4ed823d8c867043083d20c74e5fd80d
-  ng-packagr: 12.2.3_09d57dc806d9f5168984b8f9f7ef450c
+  ng-packagr: 12.2.4_09d57dc806d9f5168984b8f9f7ef450c
   prettier: 2.4.1
   ts-jest: 27.0.7_aa63873380b4bb2f237e2e46aef8ee69
   typescript: 4.3.5
@@ -102,7 +102,7 @@ packages:
       rxjs: 6.6.7
     dev: true
 
-  /@angular-devkit/build-angular/12.2.10_a0765da7cc16348a1adba1cd7bcf13ef:
+  /@angular-devkit/build-angular/12.2.10_cf76c9f8ea26db7df95f1c700659e531:
     resolution: {integrity: sha512-MuViuSmXmB67Wge3NpyfY2aAU4O4K+BbcHj1W1k1A9WTx/Hyh6jR6Zgwy/EsNh64zjdUg/Jlg/oHxIVabsWfvQ==}
     engines: {node: ^12.14.1 || >=14.0.0, npm: ^6.11.0 || ^7.5.6, yarn: '>= 1.13.0'}
     peerDependencies:
@@ -172,7 +172,7 @@ packages:
       loader-utils: 2.0.0
       mini-css-extract-plugin: 2.2.1_webpack@5.50.0
       minimatch: 3.0.4
-      ng-packagr: 12.2.3_09d57dc806d9f5168984b8f9f7ef450c
+      ng-packagr: 12.2.4_09d57dc806d9f5168984b8f9f7ef450c
       open: 8.2.1
       ora: 5.4.1
       parse5-html-rewriting-stream: 6.0.1
@@ -3175,8 +3175,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@nrwl/nx-cloud/12.3.14:
-    resolution: {integrity: sha512-8lXkXReF8dqbGtBmHGLxIXQ4rXRacQtyx6U9CAf34leVOZAFrr3mzAt2rWwzeKZqipy9Z2B1CbEZ2aJCROSxtg==}
+  /@nrwl/nx-cloud/12.5.0:
+    resolution: {integrity: sha512-3WhuYYNW9L4xFCdCTWBlJUN0CoWMAYpfY1tnLM/ZVgW2Akv9jLgXKbCKV+cO0xqglSy+eMokwwQnB9PxF35aYQ==}
     hasBin: true
     dependencies:
       axios: 0.21.4
@@ -8742,8 +8742,8 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
-  /ng-packagr/12.2.3_09d57dc806d9f5168984b8f9f7ef450c:
-    resolution: {integrity: sha512-2KHoglc7UgJMnzkytzZ1wU+IEkb6UrxoU4QZxnF5BSFh9vjUra2nCXH+EKkvxD3WTj0ikXmNIMeNWbwoZpGkgA==}
+  /ng-packagr/12.2.4_09d57dc806d9f5168984b8f9f7ef450c:
+    resolution: {integrity: sha512-0IWq+ooKxqeLpwOeefzDSP9NLN02U3aWo7REvXLJVWjFfs35hE95HJjCjEvFtj9KwVKGTVgh8ZsgQ/K8OEptlg==}
     engines: {node: ^12.14.1 || >=14.0.0}
     hasBin: true
     peerDependencies:
