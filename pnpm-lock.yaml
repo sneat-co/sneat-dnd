@@ -34,7 +34,7 @@ specifiers:
   jest: 27.3.1
   jest-preset-angular: 10.1.0
   ng-packagr: 12.2.5
-  prettier: 2.4.1
+  prettier: 2.5.0
   rxjs: 6.6.7
   ts-jest: 27.0.7
   tslib: 2.3.1
@@ -50,7 +50,7 @@ dependencies:
   '@angular/platform-browser': 12.2.13_97b07de0e0a2767eebb8b475e5d053cc
   '@angular/platform-browser-dynamic': 12.2.13_df59fb07029055b5d0e612925b487993
   '@angular/router': 12.2.13_77f9be83c64208f20f952d6482f49f76
-  '@nrwl/angular': 12.10.0_367fb7480c2ce372dca5d75f65585b2e
+  '@nrwl/angular': 12.10.0_6a58f456f87dd9a3758ccaff4da2cd4b
   dnd-core: 14.0.1
   rxjs: 6.6.7
   tslib: 2.3.1
@@ -65,12 +65,12 @@ devDependencies:
   '@angular/compiler-cli': 12.2.13_aac1e49e6604a7b98f0db78ff98dd5d4
   '@angular/language-service': 12.2.13
   '@nrwl/cli': 12.10.0
-  '@nrwl/eslint-plugin-nx': 12.10.0_fab860b7e9e3edf4e6102051ef714eae
+  '@nrwl/eslint-plugin-nx': 12.10.0_b3483d3896320419073d557bc5719fbb
   '@nrwl/jest': 12.10.0
   '@nrwl/linter': 12.10.0
   '@nrwl/nx-cloud': 12.5.4
   '@nrwl/tao': 12.10.0
-  '@nrwl/workspace': 12.10.0_prettier@2.4.1
+  '@nrwl/workspace': 12.10.0_prettier@2.5.0
   '@types/jest': 27.0.3
   '@types/node': 16.11.10
   '@typescript-eslint/eslint-plugin': 5.4.0_0d399190e40e12e33af60b77eb8164bd
@@ -80,7 +80,7 @@ devDependencies:
   jest: 27.3.1
   jest-preset-angular: 10.1.0_7b695863f749bba4f48056a86edcef8f
   ng-packagr: 12.2.5_5fb9247b82d80efaf1fe16e624d62a26
-  prettier: 2.4.1
+  prettier: 2.5.0
   ts-jest: 27.0.7_9fd3d618a8f56b72434a4d1d442dbc9f
   typescript: 4.3.5
 
@@ -3008,16 +3008,16 @@ packages:
       read-package-json-fast: 2.0.3
     dev: true
 
-  /@nrwl/angular/12.10.0_367fb7480c2ce372dca5d75f65585b2e:
+  /@nrwl/angular/12.10.0_6a58f456f87dd9a3758ccaff4da2cd4b:
     resolution: {integrity: sha512-7MVaTU132cdVBAdZw2eaa8PMVZweKyMTjEgg6mIoEns9G/WDB8lzugh0Fq+TwakxGOecZX5tZbN12f/fC2/UGQ==}
     requiresBuild: true
     dependencies:
       '@angular-devkit/schematics': 12.2.10
-      '@nrwl/cypress': 12.10.0_prettier@2.4.1+typescript@4.3.5
+      '@nrwl/cypress': 12.10.0_prettier@2.5.0+typescript@4.3.5
       '@nrwl/devkit': 12.10.0
       '@nrwl/jest': 12.10.0
       '@nrwl/linter': 12.10.0
-      '@nrwl/storybook': 12.10.0_prettier@2.4.1+typescript@4.3.5
+      '@nrwl/storybook': 12.10.0_prettier@2.5.0+typescript@4.3.5
       '@phenomnomnominal/tsquery': 4.1.1_typescript@4.3.5
       '@schematics/angular': 12.2.10
       ignore: 5.1.8
@@ -3049,7 +3049,7 @@ packages:
       yargs: 15.4.1
       yargs-parser: 20.0.0
 
-  /@nrwl/cypress/12.10.0_prettier@2.4.1+typescript@4.3.5:
+  /@nrwl/cypress/12.10.0_prettier@2.5.0+typescript@4.3.5:
     resolution: {integrity: sha512-hqiTkhcg3H8ZA4ihWKSj2qwae90WN2/8WTHLIIjn+aNT0D4XtfaE/3RAIwLvkF+VqyUcvjwTIesV+d87Fgo5dA==}
     peerDependencies:
       cypress: '>= 3 < 9'
@@ -3057,7 +3057,7 @@ packages:
       '@cypress/webpack-preprocessor': 4.1.5
       '@nrwl/devkit': 12.10.0
       '@nrwl/linter': 12.10.0
-      '@nrwl/workspace': 12.10.0_prettier@2.4.1
+      '@nrwl/workspace': 12.10.0_prettier@2.5.0
       chalk: 4.1.0
       fork-ts-checker-webpack-plugin: 6.2.10
       rxjs: 6.6.7
@@ -3088,14 +3088,14 @@ packages:
       semver: 7.3.4
       tslib: 2.3.1
 
-  /@nrwl/eslint-plugin-nx/12.10.0_fab860b7e9e3edf4e6102051ef714eae:
+  /@nrwl/eslint-plugin-nx/12.10.0_b3483d3896320419073d557bc5719fbb:
     resolution: {integrity: sha512-bm0PjAYWuVw2b6fJ0oBSyGvtVIwhXXrznQ5H8kiwoHU3H58W4gu+OSnaMjDXT5ZCUsuTEV1fmI7GynJLGBtzDw==}
     peerDependencies:
       '@typescript-eslint/parser': ~4.31.1
       eslint-config-prettier: ^8.1.0
     dependencies:
       '@nrwl/devkit': 12.10.0
-      '@nrwl/workspace': 12.10.0_prettier@2.4.1+ts-node@9.1.1
+      '@nrwl/workspace': 12.10.0_prettier@2.5.0+ts-node@9.1.1
       '@typescript-eslint/experimental-utils': 4.31.2_eslint@8.3.0+typescript@4.3.5
       '@typescript-eslint/parser': 5.4.0_eslint@8.3.0+typescript@4.3.5
       confusing-browser-globals: 1.0.10
@@ -3205,13 +3205,13 @@ packages:
       - debug
     dev: true
 
-  /@nrwl/storybook/12.10.0_prettier@2.4.1+typescript@4.3.5:
+  /@nrwl/storybook/12.10.0_prettier@2.5.0+typescript@4.3.5:
     resolution: {integrity: sha512-V8yIXut6Lhr/2dXMcRSDOg75ro1JxZGN6EqjKCR/4Nq1B9YWa0lBzHc0FbQGvfCVEFTnaV57FUlc/xiKU+ddsA==}
     dependencies:
-      '@nrwl/cypress': 12.10.0_prettier@2.4.1+typescript@4.3.5
+      '@nrwl/cypress': 12.10.0_prettier@2.5.0+typescript@4.3.5
       '@nrwl/devkit': 12.10.0
       '@nrwl/linter': 12.10.0
-      '@nrwl/workspace': 12.10.0_prettier@2.4.1
+      '@nrwl/workspace': 12.10.0_prettier@2.5.0
       core-js: 3.18.3
       semver: 7.3.4
       ts-loader: 5.4.5_typescript@4.3.5
@@ -3245,7 +3245,7 @@ packages:
       tslib: 2.3.1
       yargs-parser: 20.0.0
 
-  /@nrwl/workspace/12.10.0_prettier@2.4.1:
+  /@nrwl/workspace/12.10.0_prettier@2.5.0:
     resolution: {integrity: sha512-3efkh/0DEOmQXnA2SlBcEk21QiM0vPaJt73CiYnocm1oy7/ngZDyhxYFxOJkVtsfRvR69Etj2JLonbIWa4Za5w==}
     peerDependencies:
       prettier: ^2.3.0
@@ -3268,7 +3268,7 @@ packages:
       npm-run-all: 4.1.5
       npm-run-path: 4.0.1
       open: 7.4.2
-      prettier: 2.4.1
+      prettier: 2.5.0
       rxjs: 6.6.7
       semver: 7.3.4
       strip-ansi: 6.0.0
@@ -3284,7 +3284,7 @@ packages:
       - ts-node
       - utf-8-validate
 
-  /@nrwl/workspace/12.10.0_prettier@2.4.1+ts-node@9.1.1:
+  /@nrwl/workspace/12.10.0_prettier@2.5.0+ts-node@9.1.1:
     resolution: {integrity: sha512-3efkh/0DEOmQXnA2SlBcEk21QiM0vPaJt73CiYnocm1oy7/ngZDyhxYFxOJkVtsfRvR69Etj2JLonbIWa4Za5w==}
     peerDependencies:
       prettier: ^2.3.0
@@ -3307,7 +3307,7 @@ packages:
       npm-run-all: 4.1.5
       npm-run-path: 4.0.1
       open: 7.4.2
-      prettier: 2.4.1
+      prettier: 2.5.0
       rxjs: 6.6.7
       semver: 7.3.4
       strip-ansi: 6.0.0
@@ -10129,8 +10129,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.4.1:
-    resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
+  /prettier/2.5.0:
+    resolution: {integrity: sha512-FM/zAKgWTxj40rH03VxzIPdXmj39SwSjwG0heUcNFwI+EMZJnY93yAiKXM3dObIKAM5TA88werc8T/EwhB45eg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
