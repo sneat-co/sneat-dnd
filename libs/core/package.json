@@ -4,8 +4,8 @@
   "author": "Alexander Trakhimenok",
   "repository": "https://github.com/sneat-co/sneat-dnd",
   "peerDependencies": {
-    "@angular/common": "^12.2.0",
-    "@angular/core": "^12.2.0"
+    "@angular/common": "^12.2.0 || ^16.0.0",
+    "@angular/core": "^12.2.0 || ^16.0.0"
   },
   "dependencies": {
     "tslib": "2.3.1"
