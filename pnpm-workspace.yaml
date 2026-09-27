@@ -1,0 +1,15 @@
+packages:
+  - '.'
+
+overrides:
+  browserslist: 4.28.9
+  js-yaml: ">=4.3.2"
+allowBuilds:
+  '@angular/cli': true
+  '@nrwl/angular': true
+  core-js: true
+  core-js-pure: true
+  cypress: true
+  esbuild: true
+  fsevents: true
+  nice-napi: true
