@@ -34,8 +34,8 @@ describe('TreeState', () => {
       expect(moved).toBeTruthy();
 
       expect(moved.from).toBeTruthy();
-      expect(moved.from.parent).toEqual('root');
-      expect(moved.from.index).toEqual(0);
+      expect(moved.from?.parent).toEqual('root');
+      expect(moved.from?.index).toEqual(0);
 
       expect(moved.node).toBeTruthy();
       expect(moved.node.parent).toEqual('root');
